@@ -1,4 +1,5 @@
 import CopyButton from "@/components/CopyButton";
+import Input from "@/components/Input";
 import Title from "@/components/Title";
 import { Tomorrow } from "next/font/google";
 
@@ -14,7 +15,8 @@ export default function Home() {
         <div className="inner py-24 relative">
           <div className="generator flex flex-col gap-16">
             <Title title="Password Generator" main />
-            <div>
+            <div className="flex flex-col gap-5">
+              <Input />
               <CopyButton />
             </div>
           </div>

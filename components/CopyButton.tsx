@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { GlobalContext } from "@/contexts/GlobalContext";
 import { useContext } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
