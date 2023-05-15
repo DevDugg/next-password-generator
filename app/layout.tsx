@@ -1,5 +1,5 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import "./globals.css";
 import { GlobalContext } from "@/contexts/GlobalContext";
 import { IConfig } from "@/types/config.type";
@@ -41,6 +41,14 @@ const RootLayout = ({ children }: IProps) => {
     () => ({ passwords, setPasswords }),
     [passwords, setPasswords]
   );
+
+  useEffect(() => {
+    if (passwordContext.password.value.length === 0) return;
+    passwordsContext.setPasswords([
+      ...passwordsContext.passwords,
+      passwordContext.password,
+    ]);
+  }, [passwordContext.password]);
 
   return (
     <html lang="en">

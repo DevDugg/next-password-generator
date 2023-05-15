@@ -68,3 +68,19 @@ input[type="range"]::-ms-track {
   background: #00f0ff;
   margin-top: 10.5px;
 }
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #00f0ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f8ef00;
+}
+
+button:disabled {
+  opacity: 0.5;
+}

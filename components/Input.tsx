@@ -23,9 +23,9 @@ const Input = () => {
       <button
         type="button"
         className="w-fit"
-        onClick={() =>
-          setPassword({ ...password, value: Password.generate(config) })
-        }
+        onClick={() => {
+          setPassword({ ...password, value: Password.generate(config) });
+        }}
       >
         <VscDebugRestart color="#00F0FF" className="w-6 h-6" />
       </button>

@@ -27,6 +27,9 @@ module.exports = {
       letterSpacing: {
         title: "8px",
       },
+      gridTemplateColumns: {
+        main: "60% 40%",
+      },
     },
   },
   plugins: [],
