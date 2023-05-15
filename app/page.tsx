@@ -1,3 +1,4 @@
+import Author from "@/components/Author";
 import Configuration from "@/components/Configuration";
 import CopyButton from "@/components/CopyButton";
 import Input from "@/components/Input";
@@ -11,6 +12,12 @@ const tomorrow = Tomorrow({
   weight: ["400", "600", "700"],
 });
 
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
+
 export default function Home() {
   return (
     <main className={`${tomorrow.className} bg-black h-screen`}>
@@ -18,6 +25,7 @@ export default function Home() {
         <div className="inner py-24 relative grid grid-cols-main h-full">
           <div className="generator flex flex-col gap-16">
             <Title title="Password Generator" main />
+            <Author />
             <div className="flex flex-col gap-5">
               <Input />
               <CopyButton />
