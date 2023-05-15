@@ -6,6 +6,13 @@ import { IConfig } from "@/types/config.type";
 import { IPassword } from "@/types/password.type";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Tomorrow } from "next/font/google";
+
+const tomorrow = Tomorrow({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-tomorrow",
+});
 
 export const metadata = {
   title: "Password generator",
@@ -51,7 +58,7 @@ const RootLayout = ({ children }: IProps) => {
   }, [passwordContext.password]);
 
   return (
-    <html lang="en">
+    <html lang="en" className={tomorrow.variable}>
       <body>
         <GlobalContext.Provider
           value={{ passwordContext, passwordsContext, configContext }}
@@ -61,6 +68,8 @@ const RootLayout = ({ children }: IProps) => {
             position="top-right"
             theme="dark"
             autoClose={2000}
+            bodyStyle={{ fontFamily: "var(--font-tomorrow)" }}
+            progressStyle={{ background: "#F8EF00" }}
           />
           {children}
         </GlobalContext.Provider>

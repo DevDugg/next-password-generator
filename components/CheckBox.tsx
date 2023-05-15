@@ -19,11 +19,11 @@ const CheckBox = ({ name, onChange, value }: IProps) => {
         value={value ? "1" : "0"}
         checked={value}
         onChange={onChange}
-        className="opacity-0 cursor-pointer h-6 w-6"
+        className="opacity-0 cursor-pointer h-6 w-6 font-tomorrow"
       />
       <label
         htmlFor={name}
-        className="text-alabaster text-text tracking-wider font-normal pl-4 w-full cursor-pointer"
+        className="text-alabaster text-text tracking-wider font-normal pl-4 w-full cursor-pointer font-tomorrow"
       >
         {name}
       </label>

@@ -13,16 +13,16 @@ const Input = () => {
     setPassword({ ...password, value: Password.generate(config) });
   }, []);
   return (
-    <div className="border-2 border-solid border-aqua p-5 flex gap-3 items-center justify-between w-full max-w-[588px]">
+    <div className="border-2 border-solid border-aqua p-5 flex gap-3 items-center justify-between w-full max-w-[588px] hover:animate-pulse">
       <input
         type="text"
         value={password.value}
         readOnly
-        className="w-full bg-transparent text-aqua text-text outline-none"
+        className="w-full bg-transparent text-aqua text-text outline-none font-tomorrow"
       />
       <button
         type="button"
-        className="w-fit"
+        className="w-fit font-tomorrow"
         onClick={() => {
           setPassword({ ...password, value: Password.generate(config) });
         }}

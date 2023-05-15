@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { GlobalContext } from "@/contexts/GlobalContext";
 import { useContext } from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
@@ -14,7 +13,7 @@ const CopyButton = () => {
         await navigator.clipboard.writeText(password.value);
         toast("Copied to clipboard!");
       }}
-      className="bg-aurelion relative py-5 px-5 w-button flex items-center justify-between gap-3 border-r-4 border-solid border-r-coolred hover:border-r-8 transition-all overflow-hidden"
+      className="bg-aurelion font-tomorrow relative py-5 px-5 w-button flex items-center justify-between gap-3 border-r-4 border-solid border-r-coolred hover:border-r-8 transition-all overflow-hidden hover:animate-pulse"
     >
       <span className="uppercase font-semibold text-black text-text tracking-widest block">
         Copy Password_

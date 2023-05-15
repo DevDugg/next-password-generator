@@ -5,12 +5,6 @@ import Input from "@/components/Input";
 import LengthControl from "@/components/LengthControl";
 import PasswordHistory from "@/components/PasswordHistory";
 import Title from "@/components/Title";
-import { Tomorrow } from "next/font/google";
-
-const tomorrow = Tomorrow({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-});
 
 export async function getStaticProps() {
   return {
@@ -20,9 +14,9 @@ export async function getStaticProps() {
 
 export default function Home() {
   return (
-    <main className={`${tomorrow.className} bg-black h-screen`}>
+    <main className="bg-black min-h-screen h-full pb-[88px]">
       <div className="container h-full">
-        <div className="inner py-24 relative grid grid-cols-main h-full">
+        <div className="inner py-24 relative flex flex-col h-full gap-6 lg:grid lg:grid-cols-main">
           <div className="generator flex flex-col gap-16">
             <Title title="Password Generator" main />
             <Author />
@@ -36,7 +30,6 @@ export default function Home() {
           <div className="history h-fit w-full mt-32">
             <PasswordHistory />
           </div>
-          <div className="history"></div>
         </div>
       </div>
     </main>

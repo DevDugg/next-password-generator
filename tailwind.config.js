@@ -1,3 +1,4 @@
+import { fontFamily } from "tailwindcss/defaultTheme";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -29,6 +30,12 @@ module.exports = {
       },
       gridTemplateColumns: {
         main: "60% 40%",
+      },
+      fontFamily: {
+        tomorrow: ["var(--font-tomorrow)", ...fontFamily.sans],
+      },
+      boxShadow: {
+        footer: "0 -1px 10px 5px #ffffff10",
       },
     },
   },
