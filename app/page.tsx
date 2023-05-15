@@ -6,6 +6,11 @@ import LengthControl from "@/components/LengthControl";
 import PasswordHistory from "@/components/PasswordHistory";
 import Title from "@/components/Title";
 
+export const metadata = {
+  title: "Password generator",
+  description: "Password generator by VividTruthKeeper",
+};
+
 export default function Home() {
   return (
     <main className="bg-black min-h-screen h-full pb-[88px]">

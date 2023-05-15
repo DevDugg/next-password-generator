@@ -14,11 +14,6 @@ const tomorrow = Tomorrow({
   variable: "--font-tomorrow",
 });
 
-export const metadata = {
-  title: "Password generator",
-  description: "Password generator by VividTruthKeeper",
-};
-
 interface IProps {
   children: React.ReactNode;
 }
