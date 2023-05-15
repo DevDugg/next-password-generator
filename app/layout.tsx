@@ -22,8 +22,8 @@ const RootLayout = ({ children }: IProps) => {
     lowercase: true,
     uppercase: true,
     numbers: true,
-    symbols: false,
-    length: 8,
+    symbols: true,
+    length: 12,
   });
 
   const [password, setPassword] = useState<IPassword>({ ...config, value: "" });

@@ -1,5 +1,7 @@
+import Configuration from "@/components/Configuration";
 import CopyButton from "@/components/CopyButton";
 import Input from "@/components/Input";
+import LengthControl from "@/components/LengthControl";
 import Title from "@/components/Title";
 import { Tomorrow } from "next/font/google";
 
@@ -18,7 +20,9 @@ export default function Home() {
             <div className="flex flex-col gap-5">
               <Input />
               <CopyButton />
+              <LengthControl />
             </div>
+            <Configuration />
           </div>
           <div className="history"></div>
         </div>

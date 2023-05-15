@@ -14,9 +14,9 @@ const CopyButton = () => {
         await navigator.clipboard.writeText(password.value);
         toast("Copied to clipboard!");
       }}
-      className="bg-aurelion relative py-5 px-5 w-button flex items-center justify-between gap-3 border-r-4 border-solid border-r-coolred hover:border-r-8 transition-all overflow-hiddenS"
+      className="bg-aurelion relative py-5 px-5 w-button flex items-center justify-between gap-3 border-r-4 border-solid border-r-coolred hover:border-r-8 transition-all overflow-hidden"
     >
-      <span className="uppercase font-semibold text-black text-text tracking-wider block">
+      <span className="uppercase font-semibold text-black text-text tracking-widest block">
         Copy Password_
       </span>
       <AiOutlineArrowRight color="black" className="w-6 h-6" />

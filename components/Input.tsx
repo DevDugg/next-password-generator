@@ -20,7 +20,13 @@ const Input = () => {
         readOnly
         className="w-full bg-transparent text-aqua text-text outline-none"
       />
-      <button type="button" className="w-fit">
+      <button
+        type="button"
+        className="w-fit"
+        onClick={() =>
+          setPassword({ ...password, value: Password.generate(config) })
+        }
+      >
         <VscDebugRestart color="#00F0FF" className="w-6 h-6" />
       </button>
     </div>
