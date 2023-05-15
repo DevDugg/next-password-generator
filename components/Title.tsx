@@ -7,7 +7,7 @@ const Title = ({ title, main }: IProps) => {
   return (
     <>
       {main ? (
-        <h1 className="text-aurelion text-[28px] lg:text-main_title  p-0 w-title leading-10 tracking-title uppercase font-bold font-tomorrow lg:w-full">
+        <h1 className="text-aurelion text-[28px] w-full lg:text-main_title p-0 leading-10 tracking-title uppercase font-bold font-tomorrow lg:w-title">
           {title}
         </h1>
       ) : (
