@@ -6,12 +6,6 @@ import LengthControl from "@/components/LengthControl";
 import PasswordHistory from "@/components/PasswordHistory";
 import Title from "@/components/Title";
 
-export async function getStaticProps() {
-  return {
-    props: {},
-  };
-}
-
 export default function Home() {
   return (
     <main className="bg-black min-h-screen h-full pb-[88px]">
