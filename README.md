@@ -59,9 +59,9 @@ http://localhost:3000
 4. To copy the generated password, click the "Copy" button next to it.
 5. If you want to generate a new password, simply repeat steps 1-4.
 
-## Contact Us
+## Contact me
 
 If you have any questions, feedback, or suggestions regarding this project, please feel free to reach out to us using the following contact information:
-- [Email me](mr.aydogdy02@gmail.com)
+- [Email](mr.aydogdy02@gmail.com)
 - [Instagram](https://www.instagram.com/duggthevicious)
 - [GitHub](https://www.github.com/VividTruthKeeper)
