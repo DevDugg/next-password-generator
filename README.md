@@ -1,4 +1,4 @@
-# Password generator
+# [Password generator](http://next-password-generator-alpha.vercel.app/)
 
 This is a web password generator project built with Next.js, TypeScript, Tailwind CSS, React Icons, UUID, and React Toastify. The purpose of this project is to provide a simple and secure way to generate strong and unique passwords for various online accounts.
 
