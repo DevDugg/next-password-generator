@@ -7,8 +7,9 @@ import PasswordHistory from "@/components/PasswordHistory";
 import Title from "@/components/Title";
 
 export const metadata = {
-  title: "Password generator",
-  description: "Password generator by VividTruthKeeper",
+  title: "Password generator by Aydogdy The Dugg",
+  description:
+    "Password generator with lowercase | uppercase | symbol | length options.",
 };
 
 export default function Home() {
